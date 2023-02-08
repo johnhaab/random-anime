@@ -121,6 +121,12 @@ body {
     overflow: scroll;
   }
 }
+@media screen and (max-height: 736px) {
+  .card-container {
+    max-height: 42rem;
+    overflow: scroll;
+  }
+}
 @media screen and (max-width: 600px) {
   .card-container {
     width: 35rem;
@@ -138,13 +144,7 @@ body {
 @media screen and (max-width: 450px) {
   .card-container {
     width: 21rem;
-    max-height: 50rem;
-    overflow: scroll;
-  }
-}
-@media screen and (max-height: 736px) {
-  .card-container {
-    max-height: 42rem;
+    max-height: 40rem;
     overflow: scroll;
   }
 }

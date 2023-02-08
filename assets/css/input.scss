@@ -136,6 +136,11 @@ body {
       overflow: scroll;
     }
 
+    @media screen and (max-height:736px){
+      max-height: 42rem;
+      overflow: scroll;
+    }
+
     @media screen and (max-width:600px){
       width: 35rem;
       max-height: 60rem;
@@ -150,12 +155,7 @@ body {
 
     @media screen and (max-width:450px){
       width: 21rem;
-      max-height: 50rem;
-      overflow: scroll;
-    }
-
-    @media screen and (max-height:736px){
-      max-height: 42rem;
+      max-height: 40rem;
       overflow: scroll;
     }
 }
