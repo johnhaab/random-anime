@@ -1,0 +1,12 @@
+{
+  "name": "anime-finder",
+  "version": "1.0.0",
+  "description": "A web app to find new anime.",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass assets/css/input.scss assets/css/output.css",
+    "watch": "sass --watch assets/css/input.scss assets/css/output.css"
+  },
+  "author": "John Haab",
+  "license": "MIT"
+}
