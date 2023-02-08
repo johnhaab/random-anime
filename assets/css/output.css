@@ -20,19 +20,56 @@ body {
   padding: 0.5rem 0rem;
   max-width: fit-content;
 }
+@media screen and (max-width: 450px) {
+  .wrapper .right h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 .wrapper .right p {
   font-size: 1.25rem;
   margin-top: 0.5rem;
   word-wrap: break-word;
   max-width: 50rem;
 }
+@media screen and (max-width: 450px) {
+  .wrapper .right p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 .wrapper .left img {
   border-radius: 20px;
   margin-right: 2.5rem;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 450px) {
+  .wrapper .left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .wrapper .left p {
   font-size: 1.3rem;
+}
+@media screen and (max-width: 450px) {
+  .wrapper .left p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card-container {
@@ -49,6 +86,8 @@ body {
   padding: 2rem;
   border-radius: 20px;
   z-index: 2;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .card-container button {
   background-color: #171614;
@@ -58,6 +97,60 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 450px) {
+  .card-container button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .card-container {
+    width: 58rem;
+    max-height: 70rem;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 850px) {
+  .card-container {
+    width: 47rem;
+    max-height: 70rem;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 35rem;
+    max-height: 60rem;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-container {
+    width: 29rem;
+    max-height: 50rem;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card-container {
+    width: 21rem;
+    max-height: 50rem;
+    overflow: scroll;
+  }
+}
+@media screen and (max-height: 736px) {
+  .card-container {
+    max-height: 42rem;
+    overflow: scroll;
+  }
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
 }
 
 .bg {
